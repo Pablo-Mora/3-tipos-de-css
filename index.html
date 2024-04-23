@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        * {
+        border: 0;
+        padding: 0;
+        }
+        body {
+            background: linear-gradient(45deg, #FC466B, #3F5EFB);
+            height: 150vh;
+            font-family: "Montserrat", sans-serif;
+        }
+    </style>
+    <title>Formulario</title>
+</head>
+<body>
+    <h1  style="font-size: 2rem; text-align: center; justify-content: center; word-spacing: 10px; margin-right: 10px; color: black; text-decoration: none; color: gold;">FORMULARIO</h1>
+    <div class="container">
+        <form action="practicascesde@gmail.com" method="get" enctype="text/plain">
+            <p style="color: purple;">Bienvenido</p>
+            <span class="Nombre">
+                <input type="text" name="Nombre" placeholder="Nombre"><br>
+            </span>
+            <span class="Apellido">
+                <input type="text" name="Apellido" placeholder="Apellido"><br>
+            </span>
+            <span class="Email">
+                <input type="email" placeholder="Email"><br>
+            </span>
+            <span class="Hombre">
+                <label for="Hombre">Hombre</label>
+                <input type="radio" name="Masculino" id="Hombre" value="Hombre"><br>
+            </span>
+            <span class="Mujer">
+                <label for="Mujer">Mujer</label>
+                <input type="radio" name="Femenino" id="Mujer" value="Mujer"><br>
+            </span>
+            <span class="Novedades">
+                <input class="novedades" type="checkbox" name="novedades" id="novedades" value="si" checked>
+                <label class="novedades" for="novedades">Deseo recibir información sobre novedades y ofertas</label><br><br>
+            </span>
+            <span class="condiciones">
+                <input type="checkbox" name="condiciones" id="condiciones" value="si">
+                <label for="condiciones">Declaro haber leido y aceptar las condiciones</label><br><br>
+            </span>
+            <span class="Enviar">
+                <input type="button" value="Enviar">
+            </span>
+        </form>
+    </div>
+</body>
+</html>
